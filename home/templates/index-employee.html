@@ -1,19 +1,18 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>HRM</title>
+<title>Dleohr - Bootstrap Admin HTML Template</title>
 
-<link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+<link rel="shortcut icon" href="assets/img/favicon.png">
 
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="{% static 'plugins/fontawesome/css/fontawesome.min.css' %}">
-<link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
 
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="assets/css/style.css">
 <!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
@@ -27,10 +26,10 @@
 
 <div class="header-left">
 <a href="index.html" class="logo">
-<img src="{% static 'img/logo.jpeg' %}" alt="Logo">
+<img src="assets/img/logo.png" alt="Logo">
 </a>
 <a href="index.html" class="logo logo-small">
-	<img src="{% static 'img/logo-small.png' %}" alt="Logo" width="30" height="30"class="site-logo">
+<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
 </a>
 <a href="javascript:void(0);" id="toggle_btn">
 <span class="bar-icon">
@@ -74,8 +73,7 @@
 <a href="activities.html">
 <div class="media">
 <span class="avatar avatar-sm">
-	<img class="avatar-img rounded-circle" src="{% static 'img/profiles/avatar-02.jpg' %}" alt="User Avatar">
-
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-02.jpg">
 </span>
 <div class="media-body">
 <p class="noti-details"><span class="noti-title">Brian Johnson</span> paid the invoice <span class="noti-title">#DF65485</span></p>
@@ -88,7 +86,7 @@
 <a href="activities.html">
 <div class="media">
 <span class="avatar avatar-sm">
-<img class="avatar-img rounded-circle" alt="" src="{% static 'img/profiles/avatar-03.jpg' %}">
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-03.jpg">
 </span>
 <div class="media-body">
 <p class="noti-details"><span class="noti-title">Marie Canales</span> has accepted your estimate <span class="noti-title">#GTR458789</span></p>
@@ -114,8 +112,7 @@
 <a href="activities.html">
 <div class="media">
 <span class="avatar avatar-sm">
-	<img class="avatar-img rounded-circle" src="{% static 'img/profiles/avatar-04.jpg' %}" alt="User Profile Picture">
-
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-04.jpg">
 </span>
 <div class="media-body">
 <p class="noti-details"><span class="noti-title">Barbara Moore</span> declined the invoice <span class="noti-title">#RDW026896</span></p>
@@ -149,11 +146,10 @@
 <li class="nav-item dropdown has-arrow main-drop">
 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 <span class="user-img">
-	<img class="profile-image" src="{% static 'img/profile.jpg' %}" alt="Profile Photo" loading="lazy">
-
+<img src="assets/img/profile.jpg" alt="">
 <span class="status online"></span>
 </span>
-<span>Daniel Ngwasi</span>
+<span>Kavin Hansen</span>
 </a>
 <div class="dropdown-menu">
 <a class="dropdown-item" href="profile.html"><i data-feather="user" class="mr-1"></i> Profile</a>
@@ -185,8 +181,7 @@
 <span class="lnr lnr-cross  text-white" id="mobile_btn_close">X</span>
 <a href="javascript:void(0)" class="d-block menu-style text-white">
 <div class="user-avatar d-inline-block mr-3">
-<img class="rounded-circle" src="{% static 'img/profiles/avatar-18.jpg' %}"alt="User Profile Avatar"width="50"height="50"loading="lazy">
-
+<img src="assets/img/profiles/avatar-18.jpg" alt="user avatar" class="rounded-circle" width="50">
 </div>
 </a>
 </div>
@@ -202,39 +197,39 @@
  </div>
 <ul>
 <li class="active">
-<a href="index.html"><img src="{% static 'img/home.svg' %}" alt="sidebar_img"> <span>Dashboard</span></a>
+<a href="index.html"><img src="assets/img/home.svg" alt="sidebar_img"> <span>Dashboard</span></a>
 </li>
 <li>
-<a href="employee.html"><img src="{% static 'img/employee.svg' %} " alt="sidebar_img"><span> Employees</span></a>
+<a href="employee.html"><img src="assets/img/employee.svg" alt="sidebar_img"><span> Employees</span></a>
 </li>
 <li>
-<a href="company.html"><img src="{% static  'img/company.svg' %} " alt="sidebar_img"> <span> Company</span></a>
+<a href="company.html"><img src="assets/img/company.svg" alt="sidebar_img"> <span> Company</span></a>
 </li>
 <li>
-<a href="calendar.html"><img src="{% static  'img/calendar.svg'  %}" alt="sidebar_img' "> <span>Calendar</span></a>
+<a href="calendar.html"><img src="assets/img/calendar.svg" alt="sidebar_img"> <span>Calendar</span></a>
 </li>
 <li>
-<a href="leave.html"><img src="{% static 'img/leave.svg' %}   " alt="sidebar_img"> <span>Leave</span></a>
+<a href="leave.html"><img src="assets/img/leave.svg" alt="sidebar_img"> <span>Leave</span></a>
 </li>
 <li>
-<a href="review.html"><img src="{% static 'img/review.svg' %}  " alt="sidebar_img"><span>Review</span></a>
+<a href="review.html"><img src="assets/img/review.svg" alt="sidebar_img"><span>Review</span></a>
 </li>
 <li>
-<a href="report.html"><img src="{% static 'img/report.svg' %}  " alt="sidebar_img"><span>Report</span></a>
+<a href="report.html"><img src="assets/img/report.svg" alt="sidebar_img"><span>Report</span></a>
 </li>
 <li>
-<a href="manage.html"><img src="{% static 'img/manage.svg' %}  " alt="sidebar_img"> <span>Manage</span></a>
+<a href="manage.html"><img src="assets/img/manage.svg" alt="sidebar_img"> <span>Manage</span></a>
 </li>
 <li>
-<a href="settings.html"><img src="{% static 'img/settings.svg' %} " alt="sidebar_img"><span>Settings</span></a>
+<a href="settings.html"><img src="assets/img/settings.svg" alt="sidebar_img"><span>Settings</span></a>
 </li>
 <li>
-<a href="profile.html"><img src="{% static 'img/profile.svg' %}" alt="sidebar_img"> <span>Profile</span></a>
+<a href="profile.html"><img src="assets/img/profile.svg" alt="sidebar_img"> <span>Profile</span></a>
 </li>
 </ul>
 <ul class="logout">
 <li>
-<a href="profile.html"><img src="{% static  'img/logout.svg' %} " alt="sidebar_img"><span>Log out</span></a>
+<a href="profile.html"><img src="assets/img/logout.svg" alt="sidebar_img"><span>Log out</span></a>
 </li>
 </ul>
 </div>
@@ -246,27 +241,27 @@
 <div class="page-wrapper">
 <div class="content container-fluid">
 <div class="page-name 	mb-4">
-<h4 class="m-0"><img src="{% static 'img/profile.jpg' %} " class="mr-1" alt="profile" /> Welcome Admin</h4>
+<h4 class="m-0"><img src="assets/img/profiles/avatar-14.jpg" class="mr-1" alt="profile" /> Welcome Maria</h4>
 <label>Sun, 29 Nov 2019</label>
 </div>
 <div class="row mb-4">
 <div class="col-xl-6 col-sm-12 col-12">
 <div class="breadcrumb-path ">
 <ul class="breadcrumb">
-<li class="breadcrumb-item"><a href="index.html"><img src="{% static 'img/dash.png' %} " class="mr-3" alt="breadcrumb" />Home</a>
+<li class="breadcrumb-item"><a href="index.html"><img src="assets/img/dash.png" class="mr-3" alt="breadcrumb" />Home</a>
 </li>
 <li class="breadcrumb-item active">Dashboard</li>
 </ul>
-<h3>Admin Dashboard</h3>
+<h3>Employee Dashboard</h3>
 </div>
 </div>
 <div class="col-xl-6 col-sm-12 col-12">
 <div class="row">
 <div class="col-xl-6 col-sm-6 col-12">
-<a class="btn-dash" href="#"> Admin Dashboard</a>
+<a class="btn-emp" href="index.html"> Admin Dashboard</a>
 </div>
 <div class="col-xl-6 col-sm-6 col-12">
-<a class="btn-emp" href="index-employee.html">Employee Dashboard</a>
+<a class="btn-dash" href="#">Employee Dashboard</a>
 </div>
 </div>
 </div>
@@ -280,7 +275,7 @@
 <h4>700</h4>
 </div>
 <div class="card_widget_img">
-<img src="{% static 'img/dash1.png' %}" alt="card-img" />
+<img src="assets/img/dash1.png" alt="card-img" />
 </div>
 </div>
 </div>
@@ -293,7 +288,7 @@
 <h4>30</h4>
 </div>
 <div class="card_widget_img">
-<img src="{% static 'img/dash2.png' %}" alt="card-img" />
+<img src="assets/img/dash2.png" alt="card-img" />
 </div>
 </div>
 </div>
@@ -306,7 +301,7 @@
 <h4>9</h4>
 </div>
 <div class="card_widget_img">
-<img src="{% static 'img/dash3.png' %}" alt="card-img" />
+<img src="assets/img/dash3.png" alt="card-img" />
 </div>
 </div>
 </div>
@@ -319,7 +314,7 @@
 <h4>$5.8M</h4>
 </div>
 <div class="card_widget_img">
-<img src="{% static 'img/dash4.png' %}" alt="card-img" />
+<img src="assets/img/dash4.png" alt="card-img" />
 </div>
 </div>
 </div>
@@ -344,12 +339,12 @@
 </div>
 <div class="col-4">
 <div class="mt-4">
-<p class="mb-2 text-truncate"><i class="fas fa-circle text-success mr-1"></i> Testing</p>
+<p class="mb-2 text-truncate"><i class="fas fa-circle text-success mr-1"></i> Development</p>
 </div>
 </div>
 <div class="col-4">
 <div class="mt-4">
-<p class="mb-2 text-truncate"><i class="fas fa-circle text-danger mr-1"></i> Development</p>
+<p class="mb-2 text-truncate"><i class="fas fa-circle text-danger mr-1"></i> Testing</p>
 </div>
 </div>
 </div>
@@ -372,171 +367,6 @@
 </div>
 <div class="row">
 <div class="col-xl-6 col-sm-12 col-12 d-flex">
-<div class="card card-list flex-fill">
-<div class="card-header ">
-<h4 class="card-title">Total Salary By Unit</h4>
-</div>
-<div class="card-body">
-<div class="team-list">
-<div class="team-view">
-<div class="team-img">
-<img src="{% static 'img/profiles/avatar-03.jpg' %}" alt="avatar" />
-</div>
-<div class="team-content">
-<label>Maria Cotton</label>
-<span>PHP</span>
-</div>
-</div>
-<div class="team-action">
-<ul>
-<li><a><i data-feather="trash-2"></i></a></li>
-<li><a><i data-feather="edit-2"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="team-list">
-<div class="team-view">
-<div class="team-img">
-<img src="{% static 'img/profiles/avatar-04.jpg' %} " alt="avatar" />
-</div>
-<div class="team-content">
-<label>Linda Craver</label>
-<span>IOS</span>
-</div>
-</div>
-<div class="team-action">
-<ul>
-<li><a><i data-feather="trash-2"></i></a></li>
-<li><a><i data-feather="edit-2"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="team-list">
-<div class="team-view">
-<div class="team-img">
-<img src="{% static  'img/profiles/avatar-06.jpg' %} " alt="avatar" />
-</div>
-<div class="team-content">
-<label>Jenni Sims</label>
-<span>Android</span>
-</div>
-</div>
-<div class="team-action">
-<ul>
-<li><a><i data-feather="trash-2"></i></a></li>
-<li><a><i data-feather="edit-2"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="team-list">
-<div class="team-view">
-<div class="team-img">
-<img src="{% static 'img/profiles/avatar-11.jpg' %} " alt="avatar" />
-</div>
-<div class="team-content">
-<label>Danny</label>
-<span>Design</span>
-</div>
-</div>
-<div class="team-action">
-<ul>
-<li><a><i data-feather="trash-2"></i></a></li>
-<li><a><i data-feather="edit-2"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-sm-12 col-12 d-flex">
-<div class="card card-list flex-fill">
-<div class="card-header">
-<div class="">
-<h4 class="card-title">Recent Activities</h3>
-</div>
-</div>
-<div class="card-body dash-activity">
-<div class="slimscroll activity_scroll">
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-02.jpg' %} " alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>2 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-05.jpg' %} " alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>3 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-07.jpg' %}" alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>4 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-08.jpg' %} " alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>5 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-09.jpg' %}" alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>6 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-10.jpg' %} " alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>2 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-12.jpg' %} " alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>3 hours ago</span>
-</div>
-</div>
-<div class="activity-set">
-<div class="activity-img">
-<img src="{% static 'img/profiles/avatar-13.jpg' %}" alt="avatar">
-</div>
-<div class="activity-content">
-<label>Lorem ipsum dolor sit amet,</label>
-<span>4 hours ago</span>
-</div>
-</div>
-</div>
-<div class="leave-viewall activit">
-<a>View all <img src="{% static 'img/right-arrow.png' %} " class="ml-2" alt="arrow"></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-xl-3 col-sm-12 col-12 d-flex">
 <div class="card card-list flex-fill">
 <div class="card-header ">
 <h4 class="card-title-dash">Your Upcoming Leave</h4>
@@ -581,7 +411,149 @@
 <label>Tue, 31 Dec 2021</label>
 </div>
 <div class="leave-viewall">
-<a href="leave.html">View all <img src="{% static 'img/right-arrow.png' %}" class="ml-2" alt="arrow" /></a>
+<a href="leave.html">View all <img src="assets/img/right-arrow.png" class="ml-2" alt="arrow" /></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-12 col-12 d-flex">
+<div class="card card-list flex-fill">
+<div class="card-header">
+<div class="p-0  ">
+<h4 class="card-title">Recent Activities</h4>
+</div>
+</div>
+<div class="card-body dash-activity">
+<div class="slimscroll activity_scroll">
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-02.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>2 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-05.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>3 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-07.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>4 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-08.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>5 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-09.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>6 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-10.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>2 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-12.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>3 hours ago</span>
+</div>
+</div>
+<div class="activity-set">
+<div class="activity-img">
+<img src="assets/img/profiles/avatar-13.jpg" alt="avatar">
+</div>
+<div class="activity-content">
+<label>Lorem ipsum dolor sit amet,</label>
+<span>4 hours ago</span>
+</div>
+</div>
+</div>
+<div class="leave-viewall activit">
+<a>View all <img src="assets/img/right-arrow.png" class="ml-2" alt="arrow"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-sm-12 col-12 d-flex">
+<div class="card card-list flex-fill ">
+<div class="card-header">
+<h2 class="card-titles">Team Leads</h2>
+<a class="manage-link">Manage Team</a>
+</div>
+<div class="card-body p-0">
+<div class="manage-set">
+<div class="manage-name">
+<label>John Gibbs</label>
+<span>PHP</span>
+</div>
+<div class="manage-img">
+<img src="assets/img/profiles/avatar-21.jpg" alt="profile">
+</div>
+</div>
+<div class="manage-set">
+<div class="manage-name">
+<label>Danny Ward</label>
+<span>Design</span>
+</div>
+<div class="manage-img">
+<img src="assets/img/profiles/avatar-20.jpg" alt="profile">
+</div>
+</div>
+<div class="manage-set">
+<div class="manage-name">
+<label>Linda Craver</label>
+<span>IOS</span>
+</div>
+<div class="manage-img">
+<img src="assets/img/profiles/avatar-19.jpg" alt="profile">
+</div>
+</div>
+<div class="manage-set">
+<div class="manage-name">
+<label>Jenni Sims</label>
+<span>Android</span>
+</div>
+<div class="manage-img">
+<img src="assets/img/profiles/avatar-18.jpg" alt="profile">
+</div>
+</div>
+<div class="manage-set border-0">
+<div class="manage-name">
+<label>Maria Cotton</label>
+<span>Business</span>
+</div>
+<div class="manage-img">
+<img src="assets/img/profiles/avatar-17.jpg" alt="profile">
 </div>
 </div>
 </div>
@@ -589,35 +561,23 @@
 </div>
 </div>
 </div>
-<footer class="footer">
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-md-12 text-center">
-		  <div class="footer-left">
-			<p class="text-muted mb-0">
-			  &copy; <span id="yearContainer">{% now "Y" %}</span> Dantechdevelopers. All Rights Reserved.
-			</p>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </footer>
-  
-  <script src="{% static 'scripts.jss' %}"></script>
+</div>
+
+</div>
 
 
-<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-<script src="{% static 'js/feather.min.js' %}"></script>
+<script src="assets/js/feather.min.js"></script>
 
-<script src="{% static 'plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-<script src="{% static 'plugins/apexchart/apexcharts.min.js' %}"></script>
-<script src="{% static 'plugins/apexchart/chart-data.js' %}"></script>
+<script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+<script src="assets/plugins/apexchart/chart-data.js"></script>
 
-<script src="{% static 'js/script.js' %}"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
