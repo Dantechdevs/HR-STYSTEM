@@ -1,6 +1,7 @@
 # Django Admin Dashboard
 
-![Dashboard Preview](image.png)
+![Dashboard Preview]<img width="958" alt="image" src="https://github.com/user-attachments/assets/3109f123-8d12-40ab-bb86-40a3579f3717" />
+
 
 A full-stack admin dashboard built with Django backend and Bootstrap/jQuery frontend.
 
