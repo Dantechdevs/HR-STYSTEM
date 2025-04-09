@@ -13,3 +13,7 @@ def manage(request):
 def leadership(request):
     
     return render(request, 'leadership-manage.html', {})    
+
+def super_admin(request):
+    
+    return render(request, 'super-admin.html', {})

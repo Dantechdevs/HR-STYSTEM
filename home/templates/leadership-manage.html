@@ -15,7 +15,7 @@
 
     <link
       rel="stylesheet"
-      href="{%  static 'plugins/fontawesome/css/fontawesome.min.css%}"
+      href="{%  static 'plugins/fontawesome/css/fontawesome.min.css' %}"
     />
     <link
       rel="stylesheet"
@@ -252,7 +252,7 @@
                     >
                       <div class="user-avatar d-inline-block mr-3">
                         <img
-                          src="assets/img/profiles/avatar-18.jpg"
+                          src="{% static 'img/profiles/avatar-18.jpg' %}"
                           alt="user avatar"
                           class="rounded-circle"
                           width="50"
@@ -279,67 +279,84 @@
               <ul>
                 <li>
                   <a href="index.html"
-                    ><img src="assets/img/home.svg" alt="sidebar_img" />
+                    ><img src="{% static 'img/home.svg' %}" alt="sidebar_img" />
                     <span>Dashboard</span></a
                   >
                 </li>
                 <li>
                   <a href="employee.html"
                     ><img
-                      src="assets/img/employee.svg"
+                      src="{% static 'img/employee.svg' %}"
                       alt="sidebar_img"
                     /><span> Employees</span></a
                   >
                 </li>
                 <li>
                   <a href="company.html"
-                    ><img src="assets/img/company.svg" alt="sidebar_img" />
+                    ><img
+                      src="{% static 'img/company.svg' %}"
+                      alt="sidebar_img"
+                    />
                     <span> Company</span></a
                   >
                 </li>
                 <li>
                   <a href="calendar.html"
-                    ><img src="assets/img/calendar.svg" alt="sidebar_img" />
+                    ><img
+                      src="{% static 'img/calendar.svg' %}"
+                      alt="sidebar_img"
+                    />
                     <span>Calendar</span></a
                   >
                 </li>
                 <li>
                   <a href="leave.html"
-                    ><img src="assets/img/leave.svg" alt="sidebar_img" />
+                    ><img
+                      src="{% static 'img/leave.svg' %}"
+                      alt="sidebar_img"
+                    />
                     <span>Leave</span></a
                   >
                 </li>
                 <li>
                   <a href="review.html"
-                    ><img src="assets/img/review.svg" alt="sidebar_img" /><span
-                      >Review</span
-                    ></a
+                    ><img
+                      src="{% static 'img/review.svg' %}"
+                      alt="sidebar_img"
+                    /><span>Review</span></a
                   >
                 </li>
                 <li>
                   <a href="report.html"
-                    ><img src="assets/img/report.svg" alt="sidebar_img" /><span
-                      >Report</span
-                    ></a
+                    ><img
+                      src="{% static 'img/report.svg' %}"
+                      alt="sidebar_img"
+                    /><span>Report</span></a
                   >
                 </li>
                 <li class="active">
                   <a href="manage.html"
-                    ><img src="assets/img/manage.svg" alt="sidebar_img" />
+                    ><img
+                      src="{% static 'img/manage.svg' %}"
+                      alt="sidebar_img"
+                    />
                     <span>Manage</span></a
                   >
                 </li>
                 <li>
                   <a href="settings.html"
                     ><img
-                      src="assets/img/settings.svg"
+                      src="{% static 'img/settings.svg' %}"
                       alt="sidebar_img"
                     /><span>Settings</span></a
                   >
                 </li>
                 <li>
                   <a href="profile.html"
-                    ><img src="assets/img/profile.svg" alt="sidebar_img" />
+                    ><img
+                      src="{% static 'img/profile.svg' %}"
+                      alt="sidebar_img"
+                    />
                     <span>Profile</span></a
                   >
                 </li>
@@ -462,10 +479,9 @@
                                 <img
                                   <img
                                   src="{% static 'img/profiles/avatar-10.jpg' %}"
-                                  alt="Profile Avatar"
+                                  alt="profile"
+                                  class="img-table"
                                 />
-
-                                alt="profile" class="img-table" />
                               </li>
                             </ul>
                           </div>
@@ -539,6 +555,23 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="footer-left">
+              <p class="text-muted mb-0">
+                &copy;
+                <span id="yearContainer">{% now "Y" %}</span> Dantechdevelopers.
+                All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'scripts.js' %}"></script>
 
     <!-- Scripts -->
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
