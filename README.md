@@ -45,7 +45,7 @@ project-root/
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/django-dashboard.git
+git clone https://github.com/dantechdevs/django-dashboard.git
 cd django-dashboard
 
 # Create virtual environment
