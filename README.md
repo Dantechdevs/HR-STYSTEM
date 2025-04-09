@@ -1,83 +1,112 @@
-✨ Features
-Document Digitization
-Scan & convert physical documents to PDF/DOCX
-Secure storage with version control
-Smart Folder System
-Create department-specific folders (Communications/IT, HR, Finance, Programs)
-Granular permissions with RBAC (Role-Based Access Control)
-Approval Workflows
-Customizable digital approval chains
-Real-time tracking with email notifications
-Department Segmentation
-Pre-configured access tiers:
-Department	Users	Access Level
-Communications/IT	2	Full edit
-Human Resources	1	Confidential
-Finance	2	View/Edit
-Programs	3	Collaborative
-🛠️ Installation
-Copy
-# Clone repository
-git clone https://github.com/yourusername/DocuFlow.git
-cd DocuFlow
+# Django Admin Dashboard
 
-# Set up virtual environment
+![Dashboard Preview](image.png)
+
+A full-stack admin dashboard built with Django backend and Bootstrap/jQuery frontend.
+
+## Features
+
+### Backend (Django)
+- Custom admin interface with dashboard analytics
+- Role-based authentication system
+- RESTful API endpoints (DRF)
+- PostgreSQL database integration
+- Automated report generation
+- CRUD operations for employee management
+
+### Frontend
+- Responsive Bootstrap 5 layout
+- Interactive charts with Chart.js
+- Real-time updates with jQuery AJAX
+- Dynamic form validation
+- Data tables with sorting/filtering
+- Toast notifications system
+
+## Project Structure
+```bash
+project-root/
+├── core/               # Django main app
+│   ├── models/        # Database models
+│   ├── views/         # Business logic
+│   ├── templates/     # HTML templates
+│   └── static/        # CSS/JS assets
+├── config/            # Project settings
+├── requirements.txt   # Dependencies
+└── manage.py          # Django CLI
+```
+
+## Installation
+
+### Prerequisites
+- Python 3.10+
+- PostgreSQL 14+
+- Node.js (for frontend dependencies)
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/django-dashboard.git
+cd django-dashboard
+
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac)
+venv\Scripts\activate     # Windows
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure database
-python manage.py migrate
+# Configure environment
+cp .env.example .env
+nano .env  # Edit database credentials
 
-# Create admin user
+# Database setup
+python manage.py migrate
 python manage.py createsuperuser
 
-# Run development server
+# Collect static files
+python manage.py collectstatic
+
+# Start development server
 python manage.py runserver
-⚙️ Configuration
-Environment Variables
+```
 
-Create .env file:
+## Frontend Development
+```bash
+# Install frontend dependencies
+npm install bootstrap jquery @popperjs/core chart.js
 
-Copy
-SECRET_KEY=your-django-secret-key
-DEBUG=True  # Set to False in production
-DOCUMENT_ROOT=/path/to/your/storage
-Department Setup
+# Custom CSS/JS location
+core/static/
+├── css/
+│   └── custom.css
+└── js/
+    └── main.js
+```
 
-Access Django Admin (/admin) to:
 
-Create departments
-Assign users with role-based permissions
-Configure folder structures
-Workflow Customization
+## Key Technologies
+| Category       | Technologies                          |
+|----------------|---------------------------------------|
+| Backend        | Django 4.2, Django REST Framework     |
+| Frontend       | Bootstrap 5, jQuery 3.7, Chart.js     |
+| Database       | PostgreSQL, Django ORM                |
+| Deployment     | Gunicorn, Nginx, Docker               |
+| Utilities      | Celery, Redis, pytest                 |
 
-Edit workflows/models.py to:
+## Configuration
+```python
+# config/settings.py
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'core/static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-Copy
-class ApprovalWorkflow(models.Model):
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
-    approval_steps = models.JSONField()  # Customize workflow stages
-    required_signatories = models.PositiveIntegerField()
-📂 Department Structure
-Human Resources (1 User)
-Key Functions
+# .env
+DEBUG=True
+SECRET_KEY=your-secret-key
+DB_NAME=yourdb
+DB_USER=youruser
+DB_PASSWORD=yourpassword
+```
 
-Employee record management
-Recruitment pipeline tracking
-Policy document versioning
-Sample Workflow
-
-Copy
-
-🤝 Contributing
-Fork the repository
-Create feature branch: git checkout -b feature/your-feature
-Commit changes: git commit -m 'Add some feature'
-Push to branch: git push origin feature/your-feature
-Open a Pull Request
-📄 License
-MIT License - see LICENSE for details
+## License
+[MIT License](https://opensource.org/licenses/MIT)
