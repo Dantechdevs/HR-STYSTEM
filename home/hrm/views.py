@@ -6,6 +6,10 @@ def home(request):
 
     
 def manage(request):
+    
     return render(request, 'manage.html', {})
 
     
+def leadership(request):
+    
+    return render(request, 'leadership-manage.html', {})    
