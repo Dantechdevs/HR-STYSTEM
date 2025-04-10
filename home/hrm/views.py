@@ -25,15 +25,7 @@ def super_admin(request):
 
 # employee
 def employee(request):
-    employees = Employee.objects.select_related(
-        'line_manager', 
-        'team', 
-        'office'
-    ).all()
     
-    context = {
-        'employees': employees,
-    }
     return render(request, 'employee.html', context)
 
 def add_employee(request):
