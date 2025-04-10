@@ -17,3 +17,12 @@ def leadership(request):
 def super_admin(request):
     
     return render(request, 'super-admin.html', {})
+
+# employee
+def employee(request):
+        
+    return render(request, 'employee.html', {})
+
+def add_employee(request):
+    
+    return render(request, 'add_employee.html', {})
