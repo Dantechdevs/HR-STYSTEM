@@ -1,4 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views.decorators.http import require_http_methods
+from .models import Employee
+from django.contrib import messages
+from django.core.exceptions import ValidationError
+
 
 # Create your views here.
 def home(request):
@@ -20,9 +25,17 @@ def super_admin(request):
 
 # employee
 def employee(request):
-        
-    return render(request, 'employee.html', {})
+    employees = Employee.objects.select_related(
+        'line_manager', 
+        'team', 
+        'office'
+    ).all()
+    
+    context = {
+        'employees': employees,
+    }
+    return render(request, 'employee.html', context)
 
 def add_employee(request):
     
-    return render(request, 'add_employee.html', {})
+    return render(request, 'add-employee.html', {})
