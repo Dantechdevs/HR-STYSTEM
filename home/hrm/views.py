@@ -26,7 +26,7 @@ def super_admin(request):
 # employee
 def employee(request):
     
-    return render(request, 'employee.html', context)
+    return render(request, 'employee.html', {})
 
 def add_employee(request):
     
