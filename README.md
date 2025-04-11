@@ -109,5 +109,4 @@ DB_USER=youruser
 DB_PASSWORD=yourpassword
 ```
 
-## License
-[MIT License](https://opensource.org/licenses/MIT)
+
