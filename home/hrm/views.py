@@ -1,8 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.decorators.http import require_http_methods
-from .models import Employee
-from django.contrib import messages
-from django.core.exceptions import ValidationError
+
 
 
 # Create your views here.
@@ -31,3 +28,15 @@ def employee(request):
 def add_employee(request):
     
     return render(request, 'add-employee.html', {})
+
+
+def profile(request):
+    
+    return render(request, 'profile.html', {})
+
+def register(request):
+    
+    return render(request, 'register.html', {})
+def login(request):
+    
+    return render(request, 'login.html', {})
