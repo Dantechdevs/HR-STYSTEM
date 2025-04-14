@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,12 +22,7 @@
       href="{% static 'plugins/fontawesome/css/all.min.css' %}"
     />
 
-    <link
-      rel="stylesheet"
-      href="{% static 'plugins/select2/css/select2.min.css' %}"
-    />
-
-    <link rel="stylesheet" href="{% static 'css/style.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.min.js"></script>
       <script src="assets/js/respond.min.js"></script>
@@ -159,7 +153,9 @@
                           <img
                             class="avatar-img rounded-circle"
                             alt=""
+                            <img
                             src="{% static 'img/profiles/avatar-04.jpg' %}"
+                            alt="Profile Avatar"
                           />
                         </span>
                         <div class="media-body">
@@ -208,10 +204,13 @@
           <li class="nav-item dropdown has-arrow main-drop">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
               <span class="user-img">
-                <img src="{% static 'img/profile.jpg' %}" alt="" />
+                <img
+                  src="{% static 'img/profile.jpg' %}"
+                  alt="Profile Avatar"
+                />
                 <span class="status online"></span>
               </span>
-              <span>daniel</span>
+              <span>Kavin Hansen</span>
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="profile.html"
@@ -258,7 +257,43 @@
                     >
                       <div class="user-avatar d-inline-block mr-3">
                         <img
-                          src="{% static 'img/profile.jpg' %}"
+                          src="{% static 'img/profiles/avatar-18.jpg' %}"
+                          alt="user avatar"
+                          class="rounded-circle"
+                          width="50"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="sidebar-input">
+                  <div class="top-nav-search">
+                    <form>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search here"
+                      />
+                      <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-show">
+                <div class="offcanvas-menu">
+                  <div class="user-info align-center bg-theme text-center">
+                    <span class="lnr lnr-cross text-white" id="mobile_btn_close"
+                      >X</span
+                    >
+                    <a
+                      href="javascript:void(0)"
+                      class="d-block menu-style text-white"
+                    >
+                      <div class="user-avatar d-inline-block mr-3">
+                        <img
+                          src="{% static 'img/profiles/avatar-18.jpg' %}"
                           alt="user avatar"
                           class="rounded-circle"
                           width="50"
@@ -405,8 +440,8 @@
             <div class="col-xl-12 col-sm-12 col-12 mb-4">
               <div class="head-link-set">
                 <ul>
-                  <li><a class="active" href="#">Employement</a></li>
-                  <li><a href="profile-detail.html">Detail</a></li>
+                  <li><a href="profile.html">Employement</a></li>
+                  <li><a class="active" href="#">Detail</a></li>
                   <li><a href="profile-document.html">Document</a></li>
                   <li><a href="profile-payroll.html">Payroll</a></li>
                   <li><a href="profile-timeoff.html">Timeoff</a></li>
@@ -417,146 +452,17 @@
             </div>
             <div class="col-xl-12 col-sm-12 col-12">
               <div class="row">
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
-                  <div class="card flex-fill">
-                    <div class="card-header">
-                      <h2 class="card-titles">
-                        Add Maria Cotton to Another Team
-                      </h2>
-                    </div>
-                    <div class="card-body">
-                      <div class="form-group">
-                        <select class="select">
-                          <option value="Select leave">Select Team</option>
-                          <option value="leave">Team A</option>
-                          <option value="leave">Team B</option>
-                        </select>
-                      </div>
-                      <div class="form-btn">
-                        <a href="#" class="btn btn-applys">New Team</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
+                <div class="col-xl-4 col-sm-12 col-12 d-flex">
                   <div class="card card-lists flex-fill">
                     <div class="card-header">
-                      <h2 class="card-titles">PHP Team</h2>
+                      <h2 class="card-titles">Basic Information</h2>
                       <ul>
                         <li>
                           <a
-                            class="edit-link"
+                            class="add-link"
                             data-toggle="modal"
-                            data-target="#edit_working"
-                            ><i data-feather="edit"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            class="delete-link"
-                            data-toggle="modal"
-                            data-target="#delete"
-                            ><i data-feather="trash-2"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body d-flex align-items-center">
-                      <div class="member-img">
-                        <img
-                          src="{% static 'img/profiles/avatar-14.jpg' %}"
-                          alt="profile"
-                          class="mr-3"
-                        />
-                        <label>Maria Cotton</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-12 col-sm-12 col-12">
-              <div class="card card-lists flex-fill">
-                <div class="card-header">
-                  <h2 class="card-titles">
-                    Focus Technologies<span>Head Office</span>
-                  </h2>
-                  <a
-                    class="btn btn-header"
-                    data-toggle="modal"
-                    data-target="#changeoffice"
-                    >Change Office</a
-                  >
-                </div>
-                <div
-                  class="card-body d-flex align-items-center justify-content-between"
-                >
-                  <div class="member-head employee-image">
-                    <h2>Members</h2>
-                    <div class="avatar-group">
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-10.jpg' %}"
-                        />
-                      </div>
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-15.jpg' %}"
-                        />
-                      </div>
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-16.jpg' %}"
-                        />
-                      </div>
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-17.jpg' %}"
-                        />
-                      </div>
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-14.jpg' %}"
-                        />
-                      </div>
-                      <div class="avatar avatar-xs group_img group_header">
-                        <img
-                          class="avatar-img rounded-circle"
-                          alt="User Image"
-                          src="{% static 'img/profiles/avatar-18.jpg' %}"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="member_link">
-                    <a class="btn btn-visit">Visit Office</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-12 col-sm-12 col-12">
-              <div class="row">
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
-                  <div class="card card-lists flex-fill">
-                    <div class="card-header">
-                      <h2 class="card-titles">Maria Cotton's Manager</h2>
-                      <ul>
-                        <li>
-                          <a
-                            class="edit-link"
-                            data-toggle="modal"
-                            data-target="#changemanager"
-                            ><i data-feather="edit"></i
+                            data-target="#editinformation"
+                            ><i data-feather="plus"></i
                           ></a>
                         </li>
                         <li>
@@ -570,127 +476,160 @@
                       </ul>
                     </div>
                     <div class="card-body">
-                      <div class="member-formcontent border-0">
-                        <div class="member-imgs">
-                          <img
-                            src="{% static 'img/profiles/avatar-14.jpg' %}"
-                            alt="profile"
-                          />
-                          <div class="member-name">
-                            <label>Maria Cotton</label>
-                            <span
-                              ><a
-                                href="/cdn-cgi/l/email-protection"
-                                class="__cf_email__"
-                                data-cfemail="056864776c64666a71716a6b45607d64687569602b666a68"
-                                >[email&#160;protected]</a
-                              ></span
-                            >
-                          </div>
-                        </div>
-                        <div class="member-btn">
-                          <a
-                            href="#"
-                            class="btn btn-applys"
-                            data-toggle="modal"
-                            data-target="#changemanager"
-                            >Change Manager</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
-                  <div class="card flex-fill">
-                    <div class="card-header">
-                      <h2 class="card-titles">Who Reports to Maria Cotton</h2>
-                    </div>
-                    <div class="card-body">
-                      <div class="member-formcontent">
-                        <div class="avatar-group">
-                          <div class="avatar avatar-xs group_img group_header">
-                            <img
-                              class="avatar-img rounded-circle"
-                              alt="User Image"
-                              src="{% static 'profiles/avatar-14.jpg' %}"
-                            />
-                          </div>
-                          <div class="avatar avatar-xs group_img group_header">
-                            <img
-                              class="avatar-img rounded-circle"
-                              alt="User Image"
-                              src="{% static 'img/profiles/avatar-10.jpg' %}"
-                            />
-                          </div>
-                          <div class="avatar avatar-xs group_img group_header">
-                            <img
-                              class="avatar-img rounded-circle"
-                              alt="User Image"
-                              src="{% static 'img/profiles/avatar-15.jpg' %}"
-                            />
-                          </div>
-                        </div>
-                        <div class="member-btn">
-                          <a href="#" class="btn btn-applys">Add people</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-12 col-sm-12 col-12">
-              <div class="row">
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
-                  <div class="card flex-fill">
-                    <div class="card-header">
-                      <h2 class="card-titles">Position</h2>
-                    </div>
-                    <div class="card-body">
-                      <div class="form-group">
-                        <input type="text" placeholder="Job Title" />
-                      </div>
-                      <div class="form-group">
-                        <input type="text" placeholder="Permanent" />
-                      </div>
-                      <div class="form-btn">
-                        <a href="#" class="btn btn-applys">PHP Team Lead</a>
-                        <a href="#" class="btn btn-applys">Permanent</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-sm-12 col-12 d-flex">
-                  <div class="card card-lists flex-fill">
-                    <div class="card-header">
-                      <h2 class="card-titles">
-                        Working Week<span
-                          >Set the dates that your company works.</span
-                        >
-                      </h2>
-                      <a
-                        class="edit-link"
-                        data-toggle="modal"
-                        data-target="#edit_workings"
-                        ><i data-feather="edit"></i
-                      ></a>
-                    </div>
-                    <div class="card-body d-flex">
-                      <div class="form-week">
+                      <div class="member-info">
                         <ul>
-                          <li><a class="active">Mon</a></li>
-                          <li><a class="active">Tue</a></li>
-                          <li><a class="active">Wed</a></li>
-                          <li><a class="active">Thur</a></li>
-                          <li><a class="active">Fri</a></li>
-                          <li><a class="inactive">Sat</a></li>
-                          <li><a class="inactive">Sun</a></li>
+                          <li>
+                            <label>Preferred Name </label>
+                            <span>Maria</span>
+                          </li>
+                          <li>
+                            <label>First Name </label>
+                            <span>Maria</span>
+                          </li>
+                          <li>
+                            <label>Last Name </label>
+                            <span>Cotton</span>
+                          </li>
+                          <li>
+                            <label>Nationality </label>
+                            <span>American</span>
+                          </li>
+                          <li>
+                            <label>Date of Birth </label>
+                            <span>05 May 1990</span>
+                          </li>
+                          <li>
+                            <label>Gender </label>
+                            <span>Female</span>
+                          </li>
+                          <li>
+                            <label>Blood Group</label>
+                            <span>A+</span>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-xl-4 col-sm-12 col-12 d-flex">
+                  <div class="card card-lists flex-fill">
+                    <div class="card-header">
+                      <h2 class="card-titles">Basic Information</h2>
+                      <ul>
+                        <li>
+                          <a
+                            class="add-link"
+                            data-toggle="modal"
+                            data-target="#editinformations"
+                            ><i data-feather="plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="delete-link"
+                            data-toggle="modal"
+                            data-target="#delete"
+                            ><i data-feather="trash-2"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="member-info">
+                        <ul>
+                          <li>
+                            <label>Phone Number </label>
+                            <span>987654321</span>
+                          </li>
+                          <li>
+                            <label>Personal Email</label>
+                            <span
+                              ><a
+                                href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="7815190a11191b170c0c1716381d00191508141d561b1715"
+                                >[email&#160;protected]</a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <label>Secondary Number </label>
+                            <span>986754231</span>
+                          </li>
+                          <li>
+                            <label>Web Site </label>
+                            <span>www.focustechnology.com</span>
+                          </li>
+                          <li>
+                            <label>Linkedin </label>
+                            <span>#mariacotton</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-12 col-12">
+                  <div class="card card-lists flex-fill">
+                    <div class="card-header">
+                      <h2 class="card-titles">Dates</h2>
+                      <a class="edit-link"><i data-feather="edit"></i></a>
+                    </div>
+                    <div class="card-body">
+                      <div class="member-info">
+                        <ul>
+                          <li>
+                            <label>Phone Number </label>
+                            <span>987654321</span>
+                          </li>
+                          <li>
+                            <label>Personal Email</label>
+                            <span
+                              ><a
+                                href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="e984889b80888a869d9d8687a98c91888499858cc78a8684"
+                                >[email&#160;protected]</a
+                              ></span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-lists flex-fill">
+                    <div class="card-header">
+                      <h2 class="card-titles">Contact</h2>
+                      <label>New Type</label>
+                    </div>
+                    <div class="member-formcontent-path p-4">
+                      <div class="member-date member-newformat">
+                        <ul>
+                          <li>
+                            <div class="form-group">
+                              <input type="text" placeholder="Add Start Date" />
+                              <div class="addon">
+                                <i data-feather="calendar"></i>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                placeholder="Add Visa Expiry Date "
+                              />
+                              <div class="addon">
+                                <i data-feather="calendar"></i>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <a class="btn my-3 btn-primary w-100">Add A Key Date</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -700,18 +639,16 @@
       <div class="customize_popup">
         <div
           class="modal fade"
-          id="add_company"
-          data-backdrop="static"
-          data-keyboard="false"
+          id="editinformation"
           tabindex="-1"
-          aria-labelledby="staticBackdropLabeladd"
+          aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabeladd">
-                  Company Default
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Basic Information
                 </h5>
                 <button
                   type="button"
@@ -725,242 +662,25 @@
               <div class="modal-body">
                 <div class="col-md-12 p-0">
                   <div class="form-popup">
-                    <label>Time Off Allowance</label>
-                    <input type="text" placeholder="" value="25 days" />
+                    <input type="text" placeholder="Add Preferred Name" />
                   </div>
                   <div class="form-popup">
-                    <label>Year Start</label>
-                    <input type="text" placeholder="" value="01-01-2021" />
+                    <input type="text" placeholder="First Name" />
                   </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Apply</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="customize_popup">
-        <div
-          class="modal fade"
-          id="edit_working"
-          tabindex="-1"
-          aria-labelledby="staticBackdropL"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropL">Change Team</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="col-md-12 p-0">
-                  <div class="form-popup form-group">
-                    <select class="select">
-                      <option selected>PHP</option>
-                      <option>IOS</option>
-                      <option>Design</option>
-                      <option>Testing</option>
-                    </select>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Last Name" />
                   </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="customize_popup">
-        <div
-          class="modal fade"
-          id="changemanager"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLa"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLa">
-                  Change Manager
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="col-md-12 p-0">
-                  <div class="form-popup form-group">
-                    <select class="select">
-                      <option selected>Richard Wilson</option>
-                      <option>Danny Ward</option>
-                      <option>Linda Craver</option>
-                      <option>John Gibbs</option>
-                    </select>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Nationality" />
                   </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="customize_popup">
-        <div
-          class="modal fade"
-          id="changeoffice"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLab"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLab">
-                  Change Office
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="col-md-12 p-0">
-                  <div class="form-popup form-group">
-                    <input type="text" placeholder="Name" />
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Date of Birth" />
                   </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="customize_popup">
-        <div
-          class="modal fade"
-          id="position"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabe"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabe">
-                  Edit Position
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="col-md-12 p-0">
-                  <div class="form-popup form-group">
-                    <input type="text" placeholder="Job Title" />
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Gender" />
                   </div>
-                  <div class="form-popup form-group">
-                    <input type="text" placeholder="Permanent" />
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Add</button>
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="customize_popup">
-        <div
-          class="modal fade"
-          id="adddpeople"
-          tabindex="-1"
-          aria-labelledby="staticB"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticB">Add People</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="col-md-12 p-0">
-                  <div class="form-popup form-group">
-                    <input type="text" placeholder="Name" />
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Blood Group" />
                   </div>
                 </div>
               </div>
@@ -982,15 +702,17 @@
       <div class="customize_popup">
         <div
           class="modal fade"
-          id="edit_workings"
+          id="editinformations"
           tabindex="-1"
-          aria-labelledby="staticBackd"
+          aria-labelledby="staticBackdropLabels"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="staticBackd">Edit Working Week</h5>
+                <h5 class="modal-title" id="staticBackdropLabels">
+                  Add Contact
+                </h5>
                 <button
                   type="button"
                   class="close"
@@ -1002,37 +724,26 @@
               </div>
               <div class="modal-body">
                 <div class="col-md-12 p-0">
-                  <div class="checkworking">
-                    <ul>
-                      <li>
-                        <input type="checkbox" id="mon" checked />
-                        <label for="mon">Mon</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="tue" checked />
-                        <label for="tue">Tue</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="wed" checked />
-                        <label for="wed">Wed</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="thur" checked />
-                        <label for="thur">Thur</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="fri" checked />
-                        <label for="fri">Fri</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="sat" />
-                        <label for="sat">Sat</label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="sun" />
-                        <label for="sun">Sun</label>
-                      </li>
-                    </ul>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Phone Number" />
+                  </div>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Login Email" />
+                  </div>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Personal Email" />
+                  </div>
+                  <div class="form-popup">
+                    <input
+                      type="text"
+                      placeholder="Add Secondary Phone Number"
+                    />
+                  </div>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Add Web Site" />
+                  </div>
+                  <div class="form-popup">
+                    <input type="text" placeholder="Connect Your Linkedin" />
                   </div>
                 </div>
               </div>
@@ -1082,16 +793,19 @@
       </div>
     </div>
 
-</div> 
-<!-- Scripts Section -->
-<script data-cfasync="false" src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
-<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/feather.min.js' %}"></script>
-<script src="{% static 'plugins/select2/js/select2.min.js' %}"></script>
-<script src="{% static 'plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
-<script src="{% static 'js/script.js' %}"> </script>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
 
-</body>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'js/feather.min.js' %}"></script>
+
+    <script src="{% static 'plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
 </html>

@@ -11,5 +11,5 @@ urlpatterns = [
     path('add-employee.html',views.add_employee,name='add-employee.html'), 
     path('register.html',views.register,name='register.html'),
     path('login.html',views.login,name='login.html'),
-    path('profile.html',views.profile,name='profile.html')
+    path('profile.html',views.profile,name='profile.html'),
 ]
