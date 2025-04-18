@@ -3,7 +3,7 @@ from django.urls import path, include
 from.import views
 
 urlpatterns = [
-    path('',views.home, name='home'),
+    path('',views.home, name='home.html'),
     path('manage.html',views.manage,name='manage.html'),
     path('leadership-manage.html',views.leadership,name='leadership-manage.html'),
     path('super-admin.html',views.super_admin,name='super-admin.html'),
@@ -14,4 +14,5 @@ urlpatterns = [
     path('profile.html',views.profile,name='profile.html'),
     path('contact.html',views.contact,name='contact.html'),
     path('settings.html',views.settings,name='settings.html'),
+    path('settings-timeoff.html',views.settings_timeoff,name='settings-timeoff.html'),
 ]

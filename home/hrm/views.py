@@ -47,3 +47,5 @@ def contact(request):
 
 def settings(request):
     return render(request, 'settings.html', {}) 
+def settings_timeoff(request):  
+    return render(request,'settings-timeoff.html', {}) 
