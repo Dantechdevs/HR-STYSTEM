@@ -1,0 +1,23 @@
+name: 🚀 Deploy website on push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.dantechdevelopers.com
+          username: school@dantechdevelopers.com # Your actual FTP username
+          password: ${{ secrets.ftp_password }} # Reference the secret correctly
+          server-dir: /home/
+#success deployment
