@@ -28,6 +28,9 @@ def employee(request):
 def add_employee(request):
     
     return render(request, 'add-employee.html', {})
+def index_employee (request):
+    
+    return render(request, 'index-employee.html', {})
 
 
 def profile(request):
