@@ -15,6 +15,31 @@
     <link rel="stylesheet" href="{% static 'css/all.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
+    <style>
+      /* Added background styling */
+      .main-wrapper.login-body {
+        background: url("{% static 'img/login.jpg' %}") no-repeat center center
+          fixed;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+      }
+      .main-wrapper.login-body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+      .login-wrapper {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+
     <!--[if lt IE 9]>
       <script src="{% static 'js/html5shiv.min.js' %}"></script>
       <script src="{% static 'js/respond.min.js' %}"></script>
@@ -26,7 +51,7 @@
         <div class="container">
           <img
             class="img-fluid logo-dark mb-2"
-            src="{% static 'img/logo.png' %}"
+            src="{% static 'img/logo.jpeg' %}"
             alt="Logo"
           />
           <div class="loginbox">
@@ -35,7 +60,7 @@
                 <h1>Login</h1>
                 <p class="account-subtitle">Access to our dashboard</p>
 
-                <form method="POST" action="{% url 'login' %}">
+                <form method="POST" action="#">
                   {% csrf_token %}
                   <div class="form-group">
                     <label class="form-control-label">Email Address</label>
@@ -74,9 +99,7 @@
                         </div>
                       </div>
                       <div class="col-6 text-right">
-                        <a class="forgot-link" href="{% url 'password_reset' %}"
-                          >Forgot Password?</a
-                        >
+                        <a class="forgot-link" href="#">Forgot Password?</a>
                       </div>
                     </div>
                   </div>
@@ -102,7 +125,7 @@
 
                   <div class="text-center dont-have">
                     Don't have an account yet?
-                    <a href="{% url 'register' %}">Register</a>
+                    <a href="#">Register</a>
                   </div>
                 </form>
               </div>
