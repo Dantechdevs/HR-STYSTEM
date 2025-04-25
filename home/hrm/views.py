@@ -50,5 +50,9 @@ def contact(request):
 
 def settings(request):
     return render(request, 'settings.html', {}) 
+
 def settings_timeoff(request):  
     return render(request,'settings-timeoff.html', {}) 
+
+def profile_document(request):
+    return render(request, 'profile-document.html', {})

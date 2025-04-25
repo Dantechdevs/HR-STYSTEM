@@ -16,4 +16,5 @@ urlpatterns = [
     path('settings.html',views.settings,name='settings.html'),
     path('settings-timeoff.html',views.settings_timeoff,name='settings-timeoff.html'),
     path('index-employee.html',views.index_employee,name='index-employee.html'),
+    path('profile-document.html',views.profile,name='profile-document.html'),
 ]
